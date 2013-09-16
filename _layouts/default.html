@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{ page.title }}</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="/css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <link rel="stylesheet" href="/css/syntax.css">
+  <link rel="stylesheet" href="/css/user.css">
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+      <![endif]-->
+    </head>
+    <body>
+      <!-- Static navbar -->
+      <div class="navbar navbar-default navbar-static-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">{{ site.name }}</a>
+          </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="/">Általános</a></li>
+              <li><a href="/about.html">Kik vagyunk?</a></li>
+              <li><a href="/tdd.html">TDD-ről</a></li>
+              <li><a href="/posts.html">Bejegyzések</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+
+      <div class="container">
+
+        {{ content }}
+
+        <hr class="featurette-divider">
+
+        <footer>
+            <p class="pull-right"><a href="#">Vissza a tetejére</a></p>
+            <p>
+                &copy; 2013 Kir-Dev
+                &middot;
+                <a href="https://kir-dev.sch.bme.hu/">Blog</a>
+                &middot;
+                <a href="https://twitter.com/KirDev">Twitter</a>
+                &middot;
+                <a href="https://www.facebook.com/kirdevteam">Facebook</a>
+            </p>
+        </footer>
+      </div> <!-- /container -->
+
+      <script src="//code.jquery.com/jquery.js"></script>
+      <script src="/js/bootstrap.min.js"></script>
+    </body>
+</html>
