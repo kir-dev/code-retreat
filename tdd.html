@@ -3,6 +3,61 @@ layout: default
 title: Test-driven development
 ---
 
-<h1>Test-driven development</h1>
+<div class="row">
+    <div class="page-header">
+        <h1>
+            Test-driven development
+            <small>TDD</small>
+        </h1>
+    </div>
+    <div class="col-md-6">
+        <p>
 
-<p>Röviden arról, hogy mi a TDD és pár link.</p>
+            A TDD-t azon az egyszerű feltevésen alapul, hogy fejlesztés közben
+            először a (unit) teszteket írjuk meg, és csak ezután látunk neki a
+            valós funkciót megvalósító kódnak. A TDD lényegében egy olyan
+            szoftverfejlesztési módszer, ahol nagyon rövid fejlesztési ciklusok
+            követik egymást. Ezek általában a következők:
+
+            <ol>
+                <li>Tesztet írunk az új funkcióhoz.</li>
+                <li>Tesztek futtatása. Az újonnan írt tesztnek el kell hiúsulnia.</li>
+                <li>Funkció implementálása.</li>
+                <li>Tesztek újbóli futtatása. Tovább lépünk, ha minden teszt sikeres.</li>
+                <li>Refakorálás</li>
+            </ol>
+
+            Egy-egy új funkció megvalósítása, hiba javítása során ezt az 5
+            lépést újra és újra végigjárjuk.
+
+        </p>
+        <p>
+            Ez a módszer nem csak magas teszt lefedettséget eredményez, de az
+            alkalmazás architektúráját is pozitív irányba befolyásolja. A
+            fejlesztőt arra ösztönzi, hogy kis önálló részekre bontsa fel a
+            programot, amik minél kevesebb külső függőséggel rendelkeznek, így
+            könnyen tesztelhetőek.
+        </p>
+
+        <p>
+
+            A Code Retreat szempontjából az architekturális vonzat a
+            legfontosabb. A Code Retreat 4-szer 45 perce alatt elsősorban erre
+            fogunk koncentrálni. Megpróbáljuk áttekinteni és megbeszélni, hogyan
+            lehet egy problémát TDD-vel megoldani. Hogyan lehet kis lépésekben
+            előrehaladni úgy, hogy közben a kód minősége is magas színvonalú
+            maradjon.
+
+        </p>
+    </div>
+
+    <div class="col-md-6">
+        <img src="http://diogoosorio.com/public/images/blog/tdd_flow.gif" ald="TDD lépések" />
+        <p>
+            Forrás:
+            <a href="http://diogoosorio.com/blog/entry/test-driven-development-tdd-using-phpunit">
+                Test Driven Development (TDD) using PHPUnit
+            </a>
+        </p>
+    </div>
+</div>
